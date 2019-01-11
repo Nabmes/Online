@@ -1,6 +1,28 @@
-body {
-  padding-top: 70px
+/* added as recommended in section 2.8*/
+html{
+	height: 100%;
 }
+body {
+  padding-top: 70px;
+  height: 100%;
+}
+
+.wrapper{
+	min-height: 100%;
+	position : relative;
+}
+
+.content{
+	padding-bottom: 60px; /*height of footer*/
+}
+
+.footer{
+	position: absolute;
+	bottom: 15px;
+	height: 60px;
+	margin: 0;
+}
+/* / added as recommended in section 2.8*/
 
 .slide-image {
   width: 100%;
@@ -40,8 +62,4 @@ body {
 .thumbnail .caption-full {
   padding: 9px;
   color: #333;
-}
-
-footer {
-  margin: 50px 0;
 }
