@@ -8,8 +8,13 @@ $(function(){
 	case 'Contact Us':
 		$('#contact').addClass('active');
 		break;
-	case 'Home':
-		$('#nav_home').addClass('active');
+	case 'All products':
+		$('#listProducts').addClass('active');
+		break;
+		
+	default:
+		$('#listProducts').addClass('active');
+		$('#a_'+menu).addClass('active');
 		break;
 	}
 });

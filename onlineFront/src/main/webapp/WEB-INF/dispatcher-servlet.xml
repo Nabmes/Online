@@ -12,6 +12,7 @@
    ">
    
    <context:component-scan base-package="net.nab.onlineFront.controller"></context:component-scan>
+   <context:component-scan base-package="net.nab.onlineBackend.daoImpl"></context:component-scan>
    
    <bean id="viewResolver"
    		 class="org.springframework.web.servlet.view.InternalResourceViewResolver">

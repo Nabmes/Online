@@ -43,6 +43,13 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+
+		<!-- link the backend project -->
+		<dependency>
+			<groupId>net.nab</groupId>
+			<artifactId>onlineBackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<!-- update to latest version of java -->
