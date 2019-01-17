@@ -22,6 +22,12 @@ body {
 	height: 60px;
 	margin: 0;
 }
+
+.dataTableImg{
+	width:100px;
+	height: 100px;
+}
+
 /* / added as recommended in section 2.8*/
 
 .slide-image {

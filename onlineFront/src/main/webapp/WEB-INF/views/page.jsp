@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
@@ -19,6 +19,7 @@
 	
 	<script>
 		window.menu = '${title}';
+		window.contextRoot = '${contextRoot}';
 	</script>
 	
     <title>Online Shopping - ${title}</title>
@@ -28,6 +29,9 @@
 	
 	<!-- Bootstrap Readable theme -->
     <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+    
+    <!-- Bootstrap DataTables -->
+    <link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
     
     <!-- Add custom CSS here -->
     <link href="${css}/myapp.css" rel="stylesheet">
@@ -59,6 +63,11 @@
     <c:if test="${userClickAllProducts == true or userClickCategoryProducts==true}">
     <%@include file="listProducts.jsp" %>
     </c:if>
+    
+    <!-- Page content section (ShowProduct) -->
+    <c:if test="${userClickShowProduct==true}">
+    <%@include file="singleProduct.jsp" %>
+    </c:if>
     </div>   
        
     <!-- footer section -->
@@ -70,6 +79,9 @@
     <script src="${js}/jquery.js"></script>
     <script src="${js}/bootstrap.min.js"></script>
 	<script src="${js}/myapp.js"></script>
+	<script src="${js}/jquery.dataTables.js"></script>
+	<!-- Bootstrap DataTables -->
+    <script src="${js}/dataTables.bootstrap.js"></script>
 </div>
 </body>
 

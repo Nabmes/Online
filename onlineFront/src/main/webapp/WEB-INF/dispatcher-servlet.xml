@@ -11,8 +11,8 @@
    http://www.springframework.org/schema/mvc/spring-mvc.xsd
    ">
    
-   <context:component-scan base-package="net.nab.onlineFront.controller"></context:component-scan>
-   <context:component-scan base-package="net.nab.onlineBackend.daoImpl"></context:component-scan>
+   <context:component-scan base-package="net.nab.onlineFront"></context:component-scan>
+   <context:component-scan base-package="net.nab.onlineBackend"></context:component-scan>
    
    <bean id="viewResolver"
    		 class="org.springframework.web.servlet.view.InternalResourceViewResolver">
